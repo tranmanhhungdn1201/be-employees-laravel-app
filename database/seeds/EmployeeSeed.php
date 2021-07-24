@@ -1,0 +1,17 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use App\Models\Employee;
+
+class EmployeeSeed extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        factory(App\Models\Employee::class, 10)->create();
+    }
+}
